@@ -121,6 +121,7 @@ for message in st.session_state.messages:
 def check_emergency(text):
 
     emergency_keywords = [
+        # English
         "difficulty breathing",
         "can't breathe",
         "cannot breathe",
@@ -130,7 +131,36 @@ def check_emergency(text):
         "heavy bleeding",
         "severe bleeding",
         "stroke",
-        "seizure"
+        "seizure",
+
+        # Hindi
+        "सांस लेने में कठिनाई",
+        "सांस नहीं आ रही",
+        "सीने में तेज दर्द",
+        "बेहोश",
+        "बहुत ज्यादा खून",
+        "दौरा",
+
+        # Telugu
+        "శ్వాస తీసుకోవడంలో ఇబ్బంది",
+        "ఊపిరి తీసుకోలేకపోతున్నాను",
+        "తీవ్రమైన ఛాతి నొప్పి",
+        "స్పృహ కోల్పోయిన",
+        "తీవ్రమైన రక్తస్రావం",
+
+        # Kannada
+        "ಉಸಿರಾಟದ ತೊಂದರೆ",
+        "ಉಸಿರಾಡಲು ಸಾಧ್ಯವಾಗುತ್ತಿಲ್ಲ",
+        "ತೀವ್ರ ಎದೆ ನೋವು",
+        "ಪ್ರಜ್ಞಾಹೀನ",
+        "ತೀವ್ರ ರಕ್ತಸ್ರಾವ",
+
+        # Tamil
+        "சுவாசிப்பதில் சிரமம்",
+        "மூச்சு விட முடியவில்லை",
+        "கடுமையான நெஞ்சு வலி",
+        "மயக்கமடைந்த",
+        "கடுமையான இரத்தப்போக்கு"
     ]
 
     text = text.lower()
@@ -180,6 +210,14 @@ if user_input:
 
 
     else:
+
+
+
+
+
+
+
+       
 
        system_prompt = f"""
 You are SwasthyaSetu, a simple rural healthcare assistance chatbot.
@@ -234,6 +272,10 @@ immediate medical help.
 10. Always reply in the selected language.
 
 11. Keep the response short, usually 1-3 sentences.
+
+12. Do not say that the user repeated information unless they actually repeated it.
+
+13. Use the conversation history carefully and do not misunderstand previous answers.
 
 Selected language: {selected_language}
 """
