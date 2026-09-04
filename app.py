@@ -75,7 +75,7 @@ translations = {
 
 # Select language
 selected_language = st.selectbox(
-    translations["English"]["language"],
+    "🌐 Language / भाषा / భాష / மொழி",
     list(translations.keys())
 )
 
@@ -92,7 +92,11 @@ st.warning(t["warning"])
 # Create chat memory
 if "messages" not in st.session_state:
     st.session_state.messages = []
-
+    
+# New Chat button
+if st.button("🆕 New Chat"):
+    st.session_state.messages = []
+    st.rerun()
 
 # Clean welcome screen
 if not st.session_state.messages:
@@ -273,9 +277,20 @@ immediate medical help.
 
 11. Keep the response short, usually 1-3 sentences.
 
-12. Do not say that the user repeated information unless they actually repeated it.
+12. Use the user's previous answers when asking the next question.
+Do not ask for information that the user has already provided.
 
-13. Use the conversation history carefully and do not misunderstand previous answers.
+13. When you have enough information, briefly summarize what the user
+has told you and provide general health information.
+
+14. Clearly separate:
+- What the user reported
+- General information
+- When to seek medical help
+
+15. Never claim that the user definitely has a particular disease.
+
+16. If you are unsure, say that you are unsure rather than making up information.
 
 Selected language: {selected_language}
 """
