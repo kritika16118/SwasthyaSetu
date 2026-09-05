@@ -81,7 +81,7 @@ translations = {
     "important": "⚠️ ಪ್ರಮುಖ ಮಾಹಿತಿ",
     "important_text": "ಈ ಚಾಟ್‌ಬಾಟ್ ರೋಗಗಳನ್ನು ಪತ್ತೆಹಚ್ಚುವುದಿಲ್ಲ. ಗಂಭೀರ ಅಥವಾ ತುರ್ತು ರೋಗಲಕ್ಷಣಗಳಿದ್ದರೆ ತಕ್ಷಣ ವೈದ್ಯಕೀಯ ಸಹಾಯ ಪಡೆಯಿರಿ."
 },
-"Tamil": {
+    "Tamil": {
     "title": "🏥 ஸ்வாஸ்த்யசேது",
     "subtitle": "கிராமப்புற சுகாதார உதவி தளம்",
     "language": "🌐 உங்கள் மொழியைத் தேர்ந்தெடுக்கவும்",
@@ -135,6 +135,16 @@ with st.sidebar:
 
     st.subheader(t["important"])
     st.write(t["important_text"])
+    st.divider()
+
+    st.subheader("🩺 How It Works")
+
+    st.write("""
+       1. Describe your symptoms.
+       2. SwasthyaSetu asks simple questions.
+       3. The chatbot uses your answers to provide general health information.
+       4. If emergency symptoms are detected, it advises you to seek urgent medical help.
+     """)
 
 # Clean welcome screen
 if not st.session_state.messages:
@@ -242,20 +252,20 @@ if user_input:
 
     else:
        system_prompt = f"""
-You are SwasthyaSetu, a simple rural healthcare assistance chatbot.
+          You are SwasthyaSetu, a simple rural healthcare assistance chatbot.
 
-You are NOT a doctor. You must NOT diagnose diseases.
+          You are NOT a doctor. You must NOT diagnose diseases.
 
-Your job is to:
-- Understand the user's symptoms.
-- Ask useful questions to collect information.
-- Give simple general health information when enough information is available.
+          Your job is to:
+          - Understand the user's symptoms.
+          - Ask useful questions to collect information.
+          - Give simple general health information when enough information is available.
 
-IMPORTANT RULES:
+          IMPORTANT RULES:
 
-1. Ask only ONE question at a time.
+          1. Ask only ONE question at a time.
 
-2. If the user gives only a symptom, ask a relevant follow-up question.
+          2. If the user gives only a symptom, ask a relevant follow-up question.
 
 Example:
 User: I have fever
