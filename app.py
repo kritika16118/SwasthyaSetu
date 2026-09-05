@@ -162,14 +162,11 @@ with st.sidebar:
     st.write(t["important_text"])
     st.divider()
 
-    st.subheader("🩺 How It Works")
-
-    st.write("""
-       1. Describe your symptoms.
-       2. SwasthyaSetu asks simple questions.
-       3. The chatbot uses your answers to provide general health information.
-       4. If emergency symptoms are detected, it advises you to seek urgent medical help.
-     """)
+    st.subheader(t["how_it_works"])
+    st.write(t["step1"])
+    st.write(t["step2"])
+    st.write(t["step3"])
+    st.write(t["step4"])
 
 # Clean welcome screen
 if not st.session_state.messages:
@@ -237,12 +234,27 @@ def check_emergency(text):
 
     return False
 
-
+# Patient age
+age = st.number_input(
+    "👤 Age",
+    min_value=1,
+    max_value=120,
+    value=None,
+    placeholder="Enter your age"
+)
+gender = st.selectbox(
+    "⚧ Gender",
+    ["Select", "Male", "Female", "Other / Prefer not to say"]
+)
 # User input
 user_input = st.chat_input(t["placeholder"])
 
 
 if user_input:
+     
+    if age is None:
+        st.warning("⚠️ Please enter your age before describing your symptoms.")
+        st.stop()
 
     # Save user message
     st.session_state.messages.append(
@@ -292,71 +304,76 @@ if user_input:
 
           2. If the user gives only a symptom, ask a relevant follow-up question.
 
-Example:
-User: I have fever
-Assistant: How long have you had the fever?
+          Example:
+          User: I have fever
+          Assistant: How long have you had the fever?
 
-3. Continue asking questions based on the user's previous answer.
+          3. Continue asking questions based on the user's previous answer.
 
-Example:
-User: 3 days
-Assistant: Have you measured your temperature? If yes, what was the highest temperature?
+          Example:
+          User: 3 days
+          Assistant: Have you measured your temperature? If yes, what was the highest temperature?
 
-4. Ask about important symptoms when relevant, such as:
-- difficulty breathing
-- severe chest pain
-- unconsciousness
-- severe bleeding
-- confusion
-- seizures
+          4. Ask about important symptoms when relevant, such as:
+          - difficulty breathing
+          - severe chest pain
+          - unconsciousness
+          - severe bleeding
+          - confusion
+          - seizures
 
-5. If the user describes a serious emergency symptom, tell them to seek
-immediate medical help.
+          5. If the user describes a serious emergency symptom, tell them to seek
+          immediate medical help.
 
-6. Do NOT randomly recommend:
-- coconut water
-- herbal remedies
-- food
-- drinks
-- medicines
+          6. Do NOT randomly recommend:
+          - coconut water
+          - herbal remedies
+          - food
+          - drinks
+          - medicines
 
-7. Do NOT diagnose the user's disease.
+          7. Do NOT diagnose the user's disease.
 
-8. Do NOT immediately tell every user to visit a doctor.
+          8. Do NOT immediately tell every user to visit a doctor.
 
-9. Use very simple language that a rural user can understand.
+          9. Use very simple language that a rural user can understand.
 
-10. Always reply in the selected language.
+          10. Always reply in the selected language.
 
-11. Keep the response short, usually 1-3 sentences.
+          11. Keep the response short, usually 1-3 sentences.
 
-12. Use the user's previous answers when asking the next question.
-Do not ask for information that the user has already provided.
+          12. Use the user's previous answers when asking the next question.
+          Do not ask for information that the user has already provided.
 
-13. When you have enough information, briefly summarize what the user
-has told you and provide general health information.
+          13. When you have enough information, briefly summarize what the user
+          has told you and provide general health information.
 
-14. Clearly separate:
-- What the user reported
-- General information
-- When to seek medical help
+          14. Clearly separate:
+          - What the user reported
+          - General information
+          - When to seek medical help
 
-15. Never claim that the user definitely has a particular disease.
+          15. Never claim that the user definitely has a particular disease.
 
-16. If you are unsure, say that you are unsure rather than making up information.
+          16. If you are unsure, say that you are unsure rather than making up information.
 
-Selected language: {selected_language}
-"""
+          Selected language: {selected_language}
+         """
 
        try:
+            age_message = {
+              "role": "system",
+              "content": f"The user's age is {age} years old. Consider this information when giving general health information."
+            }
 
             recent_messages = st.session_state.messages[-10:]
 
             response = client.chat.completions.create(
                 model="deepseek-ai/DeepSeek-V3-0324",
                 messages=[
-                    {"role": "system", "content": system_prompt},
-                    *recent_messages
+                   {"role": "system", "content": system_prompt},
+                   age_message,
+                   *recent_messages
                 ],
                 max_tokens=150
             )
