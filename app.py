@@ -100,20 +100,9 @@ if st.button("🆕 New Chat"):
 
 # Clean welcome screen
 if not st.session_state.messages:
-    st.markdown(
-        f"""
-        <div style="text-align:center; padding:60px 20px;">
-            <h2>{t["welcome_title"]}</h2>
-            <p style="font-size:18px;">
-                {t["welcome_text"]}
-            </p>
-            <p style="font-size:16px;">
-                {t["welcome_note"]}
-            </p>
-        </div>
-        """,
-        unsafe_allow_html=True
-    )
+    st.markdown(f"## {t['welcome_title']}")
+    st.write(t["welcome_text"])
+    st.write(t["welcome_note"])
 
 
 # Display previous messages
@@ -214,15 +203,6 @@ if user_input:
 
 
     else:
-
-
-
-
-
-
-
-       
-
        system_prompt = f"""
 You are SwasthyaSetu, a simple rural healthcare assistance chatbot.
 
