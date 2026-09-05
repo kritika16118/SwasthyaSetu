@@ -26,7 +26,12 @@ translations = {
     "placeholder": "Describe your symptoms...",
     "welcome_title": "💬 How can I help you today?",
     "welcome_text": "Please describe your symptoms in simple words.",
-    "welcome_note": "I'll ask a few questions to understand better."
+    "welcome_note": "I'll ask a few questions to understand better.",
+    "new_chat": "🆕 New Chat",
+    "about": "ℹ️ About",
+    "about_text": "SwasthyaSetu helps users understand their symptoms through simple questions and general health information.",
+    "important": "⚠️ Important",
+    "important_text": "This chatbot does not diagnose diseases. For serious or emergency symptoms, seek medical help immediately.",
 },
 
     "Hindi": {
@@ -37,7 +42,12 @@ translations = {
     "placeholder": "अपने लक्षण बताएं...",
     "welcome_title": "💬 आज मैं आपकी कैसे मदद कर सकता हूँ?",
     "welcome_text": "कृपया अपने लक्षणों को सरल शब्दों में बताएं।",
-    "welcome_note": "मैं बेहतर समझने के लिए आपसे कुछ सवाल पूछूँगा।"
+    "welcome_note": "मैं बेहतर समझने के लिए आपसे कुछ सवाल पूछूँगा।",
+    "new_chat": "🆕 नई चैट",
+    "about": "ℹ️ हमारे बारे में",
+    "about_text": "स्वास्थ्यसेतु सरल सवालों और सामान्य स्वास्थ्य जानकारी के माध्यम से उपयोगकर्ताओं को अपने लक्षण समझने में मदद करता है।",
+    "important": "⚠️ महत्वपूर्ण",
+    "important_text": "यह चैटबॉट बीमारियों का निदान नहीं करता। गंभीर या आपातकालीन लक्षणों के लिए तुरंत चिकित्सा सहायता लें।"
 },
 
     "Telugu": {
@@ -48,7 +58,12 @@ translations = {
     "placeholder": "మీ లక్షణాలను వివరించండి...",
     "welcome_title": "💬 ఈరోజు నేను మీకు ఎలా సహాయం చేయగలను?",
     "welcome_text": "దయచేసి మీ లక్షణాలను సులభమైన పదాల్లో వివరించండి.",
-    "welcome_note": "మీ సమస్యను బాగా అర్థం చేసుకోవడానికి నేను కొన్ని ప్రశ్నలు అడుగుతాను."
+    "welcome_note": "మీ సమస్యను బాగా అర్థం చేసుకోవడానికి నేను కొన్ని ప్రశ్నలు అడుగుతాను.",
+    "new_chat": "🆕 కొత్త చాట్",
+    "about": "ℹ️ మా గురించి",
+    "about_text": "స్వాస్థ్యసేతు సులభమైన ప్రశ్నలు మరియు సాధారణ ఆరోగ్య సమాచారం ద్వారా మీ లక్షణాలను అర్థం చేసుకోవడానికి సహాయపడుతుంది.",
+    "important": "⚠️ ముఖ్యమైన సమాచారం",
+    "important_text": "ఈ చాట్‌బాట్ వ్యాధులను నిర్ధారించదు. తీవ్రమైన లేదా అత్యవసర లక్షణాలు ఉంటే వెంటనే వైద్య సహాయం పొందండి."
 },
 
     "Kannada": {
@@ -59,7 +74,12 @@ translations = {
     "placeholder": "ನಿಮ್ಮ ರೋಗಲಕ್ಷಣಗಳನ್ನು ವಿವರಿಸಿ...",
     "welcome_title": "💬 ಇಂದು ನಾನು ನಿಮಗೆ ಹೇಗೆ ಸಹಾಯ ಮಾಡಬಹುದು?",
     "welcome_text": "ದಯವಿಟ್ಟು ನಿಮ್ಮ ರೋಗಲಕ್ಷಣಗಳನ್ನು ಸರಳ ಪದಗಳಲ್ಲಿ ವಿವರಿಸಿ.",
-    "welcome_note": "ನಿಮ್ಮ ಸಮಸ್ಯೆಯನ್ನು ಚೆನ್ನಾಗಿ ಅರ್ಥಮಾಡಿಕೊಳ್ಳಲು ನಾನು ಕೆಲವು ಪ್ರಶ್ನೆಗಳನ್ನು ಕೇಳುತ್ತೇನೆ."
+    "welcome_note": "ನಿಮ್ಮ ಸಮಸ್ಯೆಯನ್ನು ಚೆನ್ನಾಗಿ ಅರ್ಥಮಾಡಿಕೊಳ್ಳಲು ನಾನು ಕೆಲವು ಪ್ರಶ್ನೆಗಳನ್ನು ಕೇಳುತ್ತೇನೆ.",
+    "new_chat": "🆕 ಹೊಸ ಚಾಟ್",
+    "about": "ℹ️ ನಮ್ಮ ಬಗ್ಗೆ",
+    "about_text": "ಸ್ವಾಸ್ಥ್ಯಸೇತು ಸರಳ ಪ್ರಶ್ನೆಗಳು ಮತ್ತು ಸಾಮಾನ್ಯ ಆರೋಗ್ಯ ಮಾಹಿತಿಯ ಮೂಲಕ ನಿಮ್ಮ ರೋಗಲಕ್ಷಣಗಳನ್ನು ಅರ್ಥಮಾಡಿಕೊಳ್ಳಲು ಸಹಾಯ ಮಾಡುತ್ತದೆ.",
+    "important": "⚠️ ಪ್ರಮುಖ ಮಾಹಿತಿ",
+    "important_text": "ಈ ಚಾಟ್‌ಬಾಟ್ ರೋಗಗಳನ್ನು ಪತ್ತೆಹಚ್ಚುವುದಿಲ್ಲ. ಗಂಭೀರ ಅಥವಾ ತುರ್ತು ರೋಗಲಕ್ಷಣಗಳಿದ್ದರೆ ತಕ್ಷಣ ವೈದ್ಯಕೀಯ ಸಹಾಯ ಪಡೆಯಿರಿ."
 },
 "Tamil": {
     "title": "🏥 ஸ்வாஸ்த்யசேது",
@@ -69,7 +89,12 @@ translations = {
     "placeholder": "உங்கள் அறிகுறிகளை விவரிக்கவும்...",
     "welcome_title": "💬 இன்று நான் உங்களுக்கு எப்படி உதவ முடியும்?",
     "welcome_text": "தயவுசெய்து உங்கள் அறிகுறிகளை எளிய வார்த்தைகளில் விவரிக்கவும்.",
-    "welcome_note": "உங்கள் பிரச்சனையை நன்றாகப் புரிந்துகொள்ள நான் சில கேள்விகளைக் கேட்பேன்."
+    "welcome_note": "உங்கள் பிரச்சனையை நன்றாகப் புரிந்துகொள்ள நான் சில கேள்விகளைக் கேட்பேன்.",
+    "new_chat": "🆕 புதிய உரையாடல்",
+    "about": "ℹ️ எங்களைப் பற்றி",
+    "about_text": "ஸ்வாஸ்த்யசேது எளிய கேள்விகள் மற்றும் பொதுவான சுகாதார தகவல்களின் மூலம் உங்கள் அறிகுறிகளைப் புரிந்துகொள்ள உதவுகிறது.",
+    "important": "⚠️ முக்கியமான தகவல்",
+    "important_text": "இந்த chatbot நோய்களைக் கண்டறியாது. கடுமையான அல்லது அவசர அறிகுறிகள் இருந்தால் உடனடியாக மருத்துவ உதவியைப் பெறுங்கள்."
 },
 }
 
@@ -93,10 +118,23 @@ st.warning(t["warning"])
 if "messages" not in st.session_state:
     st.session_state.messages = []
     
-# New Chat button
-if st.button("🆕 New Chat"):
-    st.session_state.messages = []
-    st.rerun()
+# Sidebar
+with st.sidebar:
+    st.header(t["title"])
+
+    st.write(t["subtitle"])
+
+    if st.button(t["new_chat"]):
+        st.session_state.messages = []
+        st.rerun()
+
+    st.divider()
+
+    st.subheader(t["about"])
+    st.write(t["about_text"])
+
+    st.subheader(t["important"])
+    st.write(t["important_text"])
 
 # Clean welcome screen
 if not st.session_state.messages:
