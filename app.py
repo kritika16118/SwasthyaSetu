@@ -204,7 +204,24 @@ if not st.session_state.messages:
     st.write(t["welcome_text"])
     st.write(t["welcome_note"])
 
+# Patient age
+age = st.number_input(
+    t["age"],
+    min_value=1,
+    max_value=120,
+    value=None,
+    placeholder="Enter your age"
+)
 
+gender = st.selectbox(
+    t["gender"],
+    [
+        t["gender_select"],
+        t["male"],
+        t["female"],
+        t["other"]
+    ]
+)
 # Display previous messages
 for message in st.session_state.messages:
     with st.chat_message(message["role"]):
@@ -264,23 +281,7 @@ def check_emergency(text):
 
     return False
 
-# Patient age
-age = st.number_input(
-    t["age"],
-    min_value=1,
-    max_value=120,
-    value=None,
-    placeholder="Enter your age"
-)
-gender = st.selectbox(
-    t["gender"],
-    [
-        t["gender_select"],
-        t["male"],
-        t["female"],
-        t["other"]
-    ]
-)
+
 # User input
 user_input = st.chat_input(t["placeholder"])
 
@@ -393,6 +394,10 @@ if user_input:
           16. If you are unsure, say that you are unsure rather than making up information.
 
           Selected language: {selected_language}
+
+          Patient information:
+          - Age: {age}
+          - Gender: {gender}
          """
 
        try:
