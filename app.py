@@ -24,6 +24,12 @@ translations = {
     "language": "🌐 Select your language",
     "warning": "This assistant provides general health information only. It does not diagnose diseases and does not replace a qualified healthcare professional.",
     "placeholder": "Describe your symptoms...",
+    "age": "👤 Age",
+    "gender": "⚧ Gender",
+    "gender_select": "Select",
+    "male": "Male",
+    "female": "Female",
+    "other": "Other / Prefer not to say",
     "welcome_title": "💬 How can I help you today?",
     "welcome_text": "Please describe your symptoms in simple words.",
     "welcome_note": "I'll ask a few questions to understand better.",
@@ -45,6 +51,12 @@ translations = {
     "language": "🌐 अपनी भाषा चुनें",
     "warning": "यह सहायक केवल सामान्य स्वास्थ्य जानकारी देता है। यह बीमारी का निदान नहीं करता और डॉक्टर का विकल्प नहीं है।",
     "placeholder": "अपने लक्षण बताएं...",
+    "age": "👤 उम्र",
+    "gender": "⚧ लिंग",
+    "gender_select": "चुनें",
+    "male": "पुरुष",
+    "female": "महिला",
+    "other": "अन्य / बताना नहीं चाहते",
     "welcome_title": "💬 आज मैं आपकी कैसे मदद कर सकता हूँ?",
     "welcome_text": "कृपया अपने लक्षणों को सरल शब्दों में बताएं।",
     "welcome_note": "मैं बेहतर समझने के लिए आपसे कुछ सवाल पूछूँगा।",
@@ -66,6 +78,12 @@ translations = {
     "language": "🌐 మీ భాషను ఎంచుకోండి",
     "warning": "ఈ సహాయకుడు సాధారణ ఆరోగ్య సమాచారాన్ని మాత్రమే అందిస్తుంది. ఇది వ్యాధులను నిర్ధారించదు మరియు వైద్యుడికి ప్రత్యామ్నాయం కాదు.",
     "placeholder": "మీ లక్షణాలను వివరించండి...",
+    "age": "👤 వయస్సు",
+    "gender": "⚧ లింగం",
+    "gender_select": "ఎంచుకోండి",
+    "male": "పురుషుడు",
+    "female": "స్త్రీ",
+    "other": "ఇతర / చెప్పదలచుకోలేదు",
     "welcome_title": "💬 ఈరోజు నేను మీకు ఎలా సహాయం చేయగలను?",
     "welcome_text": "దయచేసి మీ లక్షణాలను సులభమైన పదాల్లో వివరించండి.",
     "welcome_note": "మీ సమస్యను బాగా అర్థం చేసుకోవడానికి నేను కొన్ని ప్రశ్నలు అడుగుతాను.",
@@ -87,6 +105,12 @@ translations = {
     "language": "🌐 ನಿಮ್ಮ ಭಾಷೆಯನ್ನು ಆಯ್ಕೆಮಾಡಿ",
     "warning": "ಈ ಸಹಾಯಕವು ಸಾಮಾನ್ಯ ಆರೋಗ್ಯ ಮಾಹಿತಿಯನ್ನು ಮಾತ್ರ ನೀಡುತ್ತದೆ. ಇದು ರೋಗಗಳನ್ನು ಪತ್ತೆಹಚ್ಚುವುದಿಲ್ಲ ಮತ್ತು ವೈದ್ಯರಿಗೆ ಪರ್ಯಾಯವಲ್ಲ.",
     "placeholder": "ನಿಮ್ಮ ರೋಗಲಕ್ಷಣಗಳನ್ನು ವಿವರಿಸಿ...",
+    "age": "👤 ವಯಸ್ಸು",
+    "gender": "⚧ ಲಿಂಗ",
+    "gender_select": "ಆಯ್ಕೆಮಾಡಿ",
+    "male": "ಪುರುಷ",
+    "female": "ಮಹಿಳೆ",
+    "other": "ಇತರೆ / ಹೇಳಲು ಇಷ್ಟವಿಲ್ಲ",
     "welcome_title": "💬 ಇಂದು ನಾನು ನಿಮಗೆ ಹೇಗೆ ಸಹಾಯ ಮಾಡಬಹುದು?",
     "welcome_text": "ದಯವಿಟ್ಟು ನಿಮ್ಮ ರೋಗಲಕ್ಷಣಗಳನ್ನು ಸರಳ ಪದಗಳಲ್ಲಿ ವಿವರಿಸಿ.",
     "welcome_note": "ನಿಮ್ಮ ಸಮಸ್ಯೆಯನ್ನು ಚೆನ್ನಾಗಿ ಅರ್ಥಮಾಡಿಕೊಳ್ಳಲು ನಾನು ಕೆಲವು ಪ್ರಶ್ನೆಗಳನ್ನು ಕೇಳುತ್ತೇನೆ.",
@@ -107,6 +131,12 @@ translations = {
     "language": "🌐 உங்கள் மொழியைத் தேர்ந்தெடுக்கவும்",
     "warning": "இந்த உதவியாளர் பொதுவான சுகாதார தகவல்களை மட்டுமே வழங்குகிறது. இது நோய்களைக் கண்டறியாது மற்றும் மருத்துவருக்கு மாற்றாகாது.",
     "placeholder": "உங்கள் அறிகுறிகளை விவரிக்கவும்...",
+    "age": "👤 வயது",
+    "gender": "⚧ பாலினம்",
+    "gender_select": "தேர்ந்தெடுக்கவும்",
+    "male": "ஆண்",
+    "female": "பெண்",
+    "other": "மற்றவை / தெரிவிக்க விரும்பவில்லை",
     "welcome_title": "💬 இன்று நான் உங்களுக்கு எப்படி உதவ முடியும்?",
     "welcome_text": "தயவுசெய்து உங்கள் அறிகுறிகளை எளிய வார்த்தைகளில் விவரிக்கவும்.",
     "welcome_note": "உங்கள் பிரச்சனையை நன்றாகப் புரிந்துகொள்ள நான் சில கேள்விகளைக் கேட்பேன்.",
@@ -236,15 +266,20 @@ def check_emergency(text):
 
 # Patient age
 age = st.number_input(
-    "👤 Age",
+    t["age"],
     min_value=1,
     max_value=120,
     value=None,
     placeholder="Enter your age"
 )
 gender = st.selectbox(
-    "⚧ Gender",
-    ["Select", "Male", "Female", "Other / Prefer not to say"]
+    t["gender"],
+    [
+        t["gender_select"],
+        t["male"],
+        t["female"],
+        t["other"]
+    ]
 )
 # User input
 user_input = st.chat_input(t["placeholder"])
@@ -361,9 +396,13 @@ if user_input:
          """
 
        try:
-            age_message = {
-              "role": "system",
-              "content": f"The user's age is {age} years old. Consider this information when giving general health information."
+            age_gender_message = {
+                "role": "system",
+                "content": (
+                    f"The user's age is {age} years old. "
+                    f"The user's gender is {gender}. "
+                    "Consider this information when providing general health information."
+                )
             }
 
             recent_messages = st.session_state.messages[-10:]
@@ -372,7 +411,7 @@ if user_input:
                 model="deepseek-ai/DeepSeek-V3-0324",
                 messages=[
                    {"role": "system", "content": system_prompt},
-                   age_message,
+                   age_gender_message,
                    *recent_messages
                 ],
                 max_tokens=150
